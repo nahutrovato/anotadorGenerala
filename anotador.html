@@ -1,0 +1,114 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="anotador">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a id="anFlechaBack" class="link">
+                <i class="icon icon-back"></i>
+                <span class="ios-only">Back</span>
+            </a>
+        </div>
+        <div class="title right">Anotador de Generala</div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="block">
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">Juego</button></div>
+                <div class="col-33"><button id="anomP1" class="col button button-raised button-fill">Jugador 1</button></div>
+                <div class="col-33"><button id="anomP2" class="col button button-raised button-fill">Jugador 2</button></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">UNO</button></div>
+                <div class="col-33"><button data-juego=1 data-player=1 id="anJ1P1" class="ac-1 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=1 data-player=2 id="anJ1P2" class="ac-1 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">DOS</button></div>
+                <div class="col-33"><button data-juego=2 data-player=1 id="anJ2P1" class="ac-1 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=2 data-player=2 id="anJ2P2" class="ac-1 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">TRES</button></div>
+                <div class="col-33"><button data-juego=3 data-player=1 id="anJ3P1" class="ac-1 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=3 data-player=2 id="anJ3P2" class="ac-1 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">CUATRO</button></div>
+                <div class="col-33"><button data-juego=4 data-player=1 id="anJ4P1" class="ac-1 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=4 data-player=2 id="anJ4P2" class="ac-1 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">CINCO</button></div>
+                <div class="col-33"><button data-juego=5 data-player=1 id="anJ5P1" class="ac-1 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=5 data-player=2 id="anJ5P2" class="ac-1 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">SEIS</button></div>
+                <div class="col-33"><button data-juego=6 data-player=1 id="anJ6P1" class="ac-1 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=6 data-player=2 id="anJ6P2" class="ac-1 col button button-raised">-</button></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">ESCALERA</button></div>
+                <div class="col-33"><button data-juego=7 data-player=1 id="anJ7P1" class="ac-2 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=7 data-player=2 id="anJ7P2" class="ac-2 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">FULL</button></div>
+                <div class="col-33"><button data-juego=8 data-player=1 id="anJ8P1" class="ac-2 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=8 data-player=2 id="anJ8P2" class="ac-2 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">POKER</button></div>
+                <div class="col-33"><button data-juego=9 data-player=1 id="anJ9P1" class="ac-2 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=9 data-player=2 id="anJ9P2" class="ac-2 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">GENERALA</button></div>
+                <div class="col-33"><button data-juego=10 data-player=1 id="anJ10P1" class="ac-2 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=10 data-player=2 id="anJ10P2" class="ac-2 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">D. GENERALA</button></div>
+                <div class="col-33"><button data-juego=11 data-player=1 id="anJ11P1" class="ac-2 col button button-raised">-</button></div>
+                <div class="col-33"><button data-juego=11 data-player=2 id="anJ11P2" class="ac-2 col button button-raised">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33"><button class="col button button-raised button-fill">TOTAL</button></div>
+                <div class="col-33"><button id="anTotP1" class="col button button-raised">-</button></div>
+                <div class="col-33"><button id="anTotP2" class="col button button-raised">-</button></div>
+            </div>
+           
+
+            <h2 class="text-align-center">¡Buena suerte y diviertanse!</h2>
+        </div>
+    </div>
+
+
+
+
+<!-- Toolbar -->
+    <div class="toolbar toolbar-bottom">
+        <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a id="anLimpiar" class="link">Limpiar</a>
+            <a id="anTerminar" class="link">Terminar</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Color theme for statusbar -->
+    <!-- <meta name="theme-color" content="#2196f3"> -->
+  <!--   <meta name="color-scheme" content="light dark"> -->
+
+    <!-- Your app title -->
+    <title>Anotador de Generala</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/framework7-bundle.min.css">
+    <!-- Path to icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="theme-dark color-theme-red"> 
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+       
+         
+        
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+
+
+
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="title right">Inicio</div>
+                    </div>
+                </div>
+
+
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+                      
+                        <div class="text-align-center">
+                            <h1>¡Bienvenidos!</h1>                        
+                            <h3>¿Cuántos jugadores tendremos hoy?</h3>
+                              </div>
+                              <br>
+                              
+                              <div class="row text-align-center">
+
+                                <div class="col">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                    <input type="radio" name="demo-radio-start" value="2"  />
+                                    <i class="icon icon-radio margin-left"></i>
+                                    <div class="item-inner">
+                                    <div class="item-title">2</div>
+                                    </div>
+                                    </label>
+                                </div>
+
+                                <div class="col">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                    <input type="radio" name="demo-radio-start" value="3"  />
+                                    <i class="icon icon-radio margin-left"></i>
+                                    <div class="item-inner">
+                                    <div class="item-title ">3</div>
+                                    </div>
+                                </label>
+                                </div>
+
+                                <div class="col">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                    <input type="radio" name="demo-radio-start" value="4"  />
+                                    <i class="icon icon-radio margin-left"></i>
+                                    <div class="item-inner">
+                                    <div class="item-title ">4</div>
+                                    </div>
+                                </label>
+                                </div>
+                                
+                                <div class="col">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                    <input type="radio" name="demo-radio-start" value="5"  />
+                                    <i class="icon icon-radio margin-left"></i>
+                                    <div class="item-inner">
+                                    <div class="item-title">5</div>
+                                    </div>
+                                    </label>
+                                </div>
+
+                                <div class="col">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                    <input type="radio" name="demo-radio-start" value="6" />
+                                    <i class="icon icon-radio margin-left"></i>
+                                    <div class="item-inner">
+                                    <div class="item-title">6</div>
+                                    </div>
+                                    </label>
+                                </div>
+                            </div>          
+                            
+                            
+
+                            <div class="list no-hairlines-md">
+                                <ul>
+                                  <li class="item-content item-input">
+                                   
+                                    <div class="item-inner">
+                                      <div class="item-title item-label required"><h3>Jugador 1</h3></div>
+                                      <div class="item-input-wrap">
+                                        <input type="text" id="inomP1" placeholder="Inserte nombre del Jugador 1" required />
+                                        <span class="input-clear-button"></span>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="item-content item-input">
+                                    
+                                    <div class="item-inner">
+                                      <div class="item-title item-label required"><h3>Jugador 2</h3></div>
+                                      <div class="item-input-wrap">
+                                        <input type="text" id="inomP2" placeholder="Inserte nombre del Jugador 2" required/>
+                                        <span class="input-clear-button"></span>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul> 
+                             </div>    
+
+
+
+                            <button id="inJugar" class="col button button-fill button-round margin-bottom">Comenzar juego</button> 
+                            <img src="img/dados.png" width="375px" height="220px"/>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
